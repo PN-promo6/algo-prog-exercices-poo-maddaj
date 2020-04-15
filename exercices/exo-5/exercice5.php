@@ -29,7 +29,7 @@ class ConcertTicket
     <p>Lieu du concert : $this->placeNumber </p>
     ";
         if (!is_null($this->name)) {
-            $showTicketContent = $showTicketContent + "<p>Détenteur du ticket : $this->clientName </p>";
+            $showTicketContent = $showTicketContent . "<p>Détenteur du ticket : $this->clientName </p>";
         }
         return $showTicketContent;
     }
