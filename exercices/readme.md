@@ -11,4 +11,7 @@ Exercice 5 :
     Rappel
 
 Exercice 6 :
-    Class parent/enfant -->
+    Class parent/enfant
+
+Exercice 7 :
+    Class abstraite + Class avec méthode et tableau -->
