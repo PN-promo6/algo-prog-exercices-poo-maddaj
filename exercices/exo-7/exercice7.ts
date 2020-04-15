@@ -69,18 +69,18 @@ class Player {
     }
 
     pushItem(item: Item): boolean {
-        let isPush: boolean;
-        // item.size = valeur de la taile de l'item passé en parametre
+        let isPush: boolean = false;
+        // item.size -> valeur de la taile de l'item passé en parametre 
+        //(item = valeur dans le tableau) & (size = renvoie a la classe abstract et à la valeur attribuer dans les super(1))
         let itemSize = item.size;
 
         if (itemSize < this.sizeFree) {
             this.inventory.push(item);
-            this.sizeFree = this.sizeFree - itemSize;
+            this.sizeFree -= itemSize; // this.sizeFree = this.sizeFree - itemSize;
             isPush = true;
-        } else {
-            isPush = false;
         }
         return isPush;
+
     }
 
 }
